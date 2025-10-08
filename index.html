@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مهتدي - تطبيقك الإسلامي الشامل</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- شاشة الترحيب -->
+    <div id="welcomeScreen" class="welcome-screen">
+        <div class="welcome-content">
+            <div class="welcome-logo">
+                <i class="fas fa-mosque"></i>
+                <h1>مهتدي</h1>
+            </div>
+            <p>تطبيقك الإسلامي الشامل</p>
+            <div class="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- الهيدر -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <i class="fas fa-mosque"></i>
+                    <span>مهتدي</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home">الرئيسية</a>
+                    <a href="#features">المميزات</a>
+                    <a href="#download">تحميل</a>
+                    <a href="#contact">تواصل</a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span>✨ التطبيق الإسلامي الأفضل</span>
+                    </div>
+                    <h1>
+                        <span class="title-line">تطبيق <span class="gradient-text">مهتدي</span></span>
+                        <span class="title-line">بين يديك الآن</span>
+                    </h1>
+                    <p class="hero-description">
+                        كل ما تحتاجه في تطبيق واحد: قرآن، أذكار، أدعية، مواقيت صلاة، وتنبيهات ذكية
+                    </p>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-download"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="downloadCount">0</span>
+                                <span class="stat-label">تحميل</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-count="4.9">0</span>
+                                <span class="stat-label">تقييم</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-count="12000">0</span>
+                                <span class="stat-label">مستخدم</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <button class="cta-button primary" onclick="directDownload()">
+                            <i class="fas fa-download"></i>
+                            تحميل التطبيق
+                        </button>
+                        <button class="cta-button secondary" onclick="scrollToSection('features')">
+                            <i class="fas fa-eye"></i>
+                            استكشاف المميزات
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-interface">
+                                <div class="app-header">
+                                    <i class="fas fa-mosque"></i>
+                                    <span>مهتدي</span>
+                                </div>
+                                <div class="app-content">
+                                    <div class="quran-verse">
+                                        <p>"رَبِّ زدْنيِ عِلْماً"</p>
+                                        <span>طه - 114</span>
+                                    </div>
+                                    <div class="prayer-times">
+                                        <div class="prayer">
+                                            <span>أوقات الصلاة</span>
+                                            <span>🕌</span>
+                                        </div>
+                                        <div class="prayer current">
+                                            <span>كتب إسلامية</span>
+                                            <span>📚</span>
+                                        </div>
+                                        <div class="prayer">
+                                            <span>الأذكار</span>
+                                            <span>📿</span>
+                                        </div>
+                                        <div class="prayer">
+                                            <span>الأدعية المأثورة</span>
+                                            <span>🙏</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="element">
+                            <i class="fas fa-quran"></i>
+                        </div>
+                        <div class="element">
+                            <i class="fas fa-pray"></i>
+                        </div>
+                        <div class="element">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المميزات -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">لماذا تختار <span class="gradient-text">مهتدي</span>؟</h2>
+                <p class="section-subtitle">كل ما تحتاجه في تطبيق واحد متكامل</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-quran"></i>
+                    </div>
+                    <h3>القرآن الكريم</h3>
+                    <p>مصحف كامل مع التلاوات والتفسير والبحث المتقدم</p>
+                    <ul class="feature-list">
+                        <li>نص القرآن كاملاً</li>
+                        <li>تلاوات متنوعة</li>
+                        <li>تفاسير معتمدة</li>
+                        <li>بحث سريع</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-praying-hands"></i>
+                    </div>
+                    <h3>الأذكار والأدعية</h3>
+                    <p>أذكار الصباح والمساء وأدعية متنوعة مع التنبيهات</p>
+                    <ul class="feature-list">
+                        <li>أذكار الصباح والمساء</li>
+                        <li>أدعية القرآن والسنة</li>
+                        <li>تنبيهات ذكية</li>
+                        <li>تذكير بالأذكار</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>مواقيت الصلاة</h3>
+                    <p>مواقيت دقيقة للصلاة مع اتجاه القبلة والأذان</p>
+                    <ul class="feature-list">
+                        <li>مواقيت دقيقة</li>
+                        <li>اتجاه القبلة</li>
+                        <li>تنبيه الأذان</li>
+                        <li>حساب المواقيت</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>الأحاديث النبوية</h3>
+                    <p>مجموعة شاملة من الأحاديث مع التصنيف والبحث</p>
+                    <ul class="feature-list">
+                        <li>أحاديث مصنفة</li>
+                        <li>شرح الأحاديث</li>
+                        <li>بحث متقدم</li>
+                        <li>أحاديث يومية</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التحميل -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text">
+                    <h2>حمّل تطبيق <span class="gradient-text">مهتدي</span> الآن</h2>
+                    <p>انضم إلى آلاف المستخدمين الذين يثقون بتطبيق مهتدي لتلبية احتياجاتهم الإسلامية اليومية</p>
+
+                    <div class="download-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>مجاني بالكامل</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>بدون إعلانات</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>آمن وموثوق</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>يدعم جميع الأجهزة</span>
+                        </div>
+                    </div>
+
+                    <button class="download-cta" onclick="directDownload()">
+                        <i class="fas fa-download"></i>
+                        تحميل التطبيق الآن
+                        <span>APK - 65MB</span>
+                    </button>
+
+                    <!-- زر تحميل إضافي -->
+                    <div style="margin-top: 1rem; text-align: center;">
+                        <button class="cta-button secondary" onclick="directDownload()" style="font-size: 0.9rem; padding: 0.8rem 1.5rem;">
+                            <i class="fas fa-mobile-alt"></i>
+                            تحميل مباشر للهواتف
+                        </button>
+                    </div>
+                </div>
+
+                <div class="download-visual">
+                    <div class="screenshots">
+                        <div class="screenshot active">
+                            <img src="assets/image/logo.jpg" alt="واجهة التطبيق" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDMwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjMzY4NEZGIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMjUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0Ij7Yp9mE2LnYqtix2Kkg2KfZhNiv2LHYqCDYp9mE2KfZhNiv2Kk8L3RleHQ+Cjwvc3ZnPgo='">
+                        </div>
+                        <div class="screenshot">
+                            <img src="assets/image/splash.jpg" alt="القرآن" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDMwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjMTBBOTgxIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMjUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIj7Zhdin2KzYryDYr9in2YTYudin2YTZhNin2YbYr9ipPC90ZXh0Pgo8L3N2Zz4K'">
+                        </div>
+                        <div class="screenshot">
+                            <img src="assets/image/logo.jpg" alt="الأذكار" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDMwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRjU5RTBCIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMjUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIj7Yp9mE2KfYrNiv2KfZhiDYp9mE2KfZhNiv2Kk8L3RleHQ+Cjwvc3ZnPgo='">
+                        </div>
+                    </div>
+                    <div class="screenshot-nav">
+                        <button class="nav-btn active" data-slide="0"></button>
+                        <button class="nav-btn" data-slide="1"></button>
+                        <button class="nav-btn" data-slide="2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تطبيقات قادمة -->
+    <section class="coming-soon-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">تطبيقات <span class="gradient-text">قريباً</span></h2>
+                <p class="section-subtitle">نعمل على تطوير المزيد من التطبيقات لخدمتكم</p>
+            </div>
+
+            <div class="coming-soon-grid">
+                <div class="coming-soon-card">
+                    <div class="card-header">
+                        <div class="app-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="status-badge">
+                            <span>قيد التطوير</span>
+                        </div>
+                    </div>
+                    <h3>القرآن صوت</h3>
+                    <p>تطبيق متخصص للاستماع إلى القرآن الكريم بأصوات أشهر القراء</p>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%"></div>
+                        </div>
+                        <span>65% مكتمل</span>
+                    </div>
+                </div>
+
+                <div class="coming-soon-card">
+                    <div class="card-header">
+                        <div class="app-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="status-badge">
+                            <span>قيد التطوير</span>
+                        </div>
+                    </div>
+                    <h3>القرآن نص</h3>
+                    <p>تطبيق قراءة القرآن مع التفاسير والشروحات المتقدمة</p>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 40%"></div>
+                        </div>
+                        <span>40% مكتمل</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">تواصل <span class="gradient-text">معنا</span></h2>
+                <p class="section-subtitle">نحن هنا لمساعدتك في أي وقت</p>
+            </div>
+
+            <div class="contact-grid">
+                <a href="https://wa.me/967773126765" class="contact-card" target="_blank">
+                    <div class="contact-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>واتساب</h3>
+                    <p>+967 77 312 6765</p>
+                    <span class="contact-cta">ابدأ محادثة</span>
+                </a>
+
+                <a href="https://facebook.com" class="contact-card" target="_blank">
+                    <div class="contact-icon facebook">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <h3>فيسبوك</h3>
+                    <p>صفحتنا الرسمية</p>
+                    <span class="contact-cta">تابعنا</span>
+                </a>
+
+                <a href="tel:+967773126765" class="contact-card">
+                    <div class="contact-icon phone">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>هاتف</h3>
+                    <p>+967 77 312 6765</p>
+                    <span class="contact-cta">اتصل بنا</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-mosque"></i>
+                        <span>مهتدي</span>
+                    </div>
+                    <p>تطبيقك الإسلامي الشامل لكل ما تحتاجه في حياتك اليومية</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>التطبيق</h4>
+                        <a href="#features">المميزات</a>
+                        <a href="#download">تحميل</a>
+                        <a href="#" onclick="directDownload()">تحميل مهتدي</a>
+                    </div>
+
+                    <div class="link-group">
+                        <h4>الدعم</h4>
+                        <a href="#contact">تواصل معنا</a>
+                        <a href="#">الأسئلة الشائعة</a>
+                        <a href="#">سياسة الخصوصية</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 مهتدي. جميع الحقوق محفوظة</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.7;">
+                    إجمالي التحميلات: <span id="totalDownloads">0</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
